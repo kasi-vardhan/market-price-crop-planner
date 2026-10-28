@@ -1,0 +1,82 @@
+[
+  {
+    "id": "rag_001",
+    "query": "What soil conditions are suitable for tomato cultivation?",
+    "expected_crop": "tomato",
+    "expected_topics": ["soil", "cultivation"],
+    "expected_source_ids": ["icar_kharif_2025"],
+    "expected_keywords": ["soil", "tomato"]
+  },
+  {
+    "id": "rag_002",
+    "query": "What water requirements should I consider when growing tomato?",
+    "expected_crop": "tomato",
+    "expected_topics": ["water"],
+    "expected_source_ids": ["icar_kharif_2025"],
+    "expected_keywords": ["water", "irrigation"]
+  },
+  {
+    "id": "rag_003",
+    "query": "What are the important cultivation practices for chilli?",
+    "expected_crop": "chilli",
+    "expected_topics": ["cultivation"],
+    "expected_source_ids": ["icar_kharif_2025"],
+    "expected_keywords": ["chilli", "cultivation"]
+  },
+  {
+    "id": "rag_004",
+    "query": "What soil and water conditions are important for chilli farming?",
+    "expected_crop": "chilli",
+    "expected_topics": ["soil", "water"],
+    "expected_source_ids": ["icar_kharif_2025"],
+    "expected_keywords": ["soil", "water"]
+  },
+  {
+    "id": "rag_005",
+    "query": "What are the suitable growing conditions for groundnut?",
+    "expected_crop": "groundnut",
+    "expected_topics": ["cultivation"],
+    "expected_source_ids": ["icar_groundnut"],
+    "expected_keywords": ["groundnut"]
+  },
+  {
+    "id": "rag_006",
+    "query": "What soil is appropriate for groundnut cultivation?",
+    "expected_crop": "groundnut",
+    "expected_topics": ["soil"],
+    "expected_source_ids": ["icar_groundnut"],
+    "expected_keywords": ["groundnut", "soil"]
+  },
+  {
+    "id": "rag_007",
+    "query": "What water requirements should I consider for paddy cultivation?",
+    "expected_crop": "paddy",
+    "expected_topics": ["water", "cultivation"],
+    "expected_source_ids": ["icar_kharif_2025"],
+    "expected_keywords": ["paddy", "water"]
+  },
+  {
+    "id": "rag_008",
+    "query": "What are important cultivation considerations for paddy?",
+    "expected_crop": "paddy",
+    "expected_topics": ["cultivation"],
+    "expected_source_ids": ["icar_kharif_2025"],
+    "expected_keywords": ["paddy", "cultivation"]
+  },
+  {
+    "id": "rag_009",
+    "query": "What should I consider when planning crops in Andhra Pradesh?",
+    "expected_crop": null,
+    "expected_topics": ["general"],
+    "expected_source_ids": ["tnau_crop_knowledge"],
+    "expected_keywords": ["Andhra Pradesh", "crop"]
+  },
+  {
+    "id": "rag_010",
+    "query": "What factors should a farmer consider before selecting a crop?",
+    "expected_crop": null,
+    "expected_topics": ["general"],
+    "expected_source_ids": ["tnau_crop_knowledge"],
+    "expected_keywords": ["crop", "season"]
+  }
+]

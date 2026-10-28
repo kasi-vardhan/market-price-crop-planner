@@ -1,0 +1,119 @@
+{
+  "evaluation": "End-to-End Agriculture Agent Evaluation",
+  "total_cases": 3,
+  "completed_cases": 3,
+  "failed_cases": 0,
+  "completion_rate": 1.0,
+  "cases": [
+    {
+      "id": "e2e_001",
+      "status": "completed",
+      "checks": {
+        "pipeline_returned_data": true,
+        "answer_present": true,
+        "ranking_present": true,
+        "citations_are_list": true,
+        "recommendation_available": false,
+        "profit_tool_returned_data": false
+      },
+      "errors": [],
+      "consistency": {
+        "passed": false,
+        "checks": {
+          "recommendation_matches_ranking": {
+            "passed": false,
+            "reason": "No deterministic recommendation was found."
+          },
+          "citation_metadata_valid": {
+            "passed": true,
+            "citation_count": 0,
+            "invalid_indices": []
+          },
+          "market_data_available": {
+            "passed": true,
+            "unavailable_market_results": []
+          }
+        }
+      },
+      "recommended_crop": null,
+      "profit_results": [],
+      "citation_count": 0,
+      "answer": "**Recommended Crop**  \nNone – no crop recommendation could be generated.\n\n**Why This Crop**  \nThe crop‑suitability tool returned a result for *rice* with a score of 0 and an “unknown” level, citing that crop data were not available. Because the deterministic ranking engine was unable to produce a candidate crop analysis (it returned an error), we have no basis for selecting a crop that matches your farm’s conditions.\n\n**Market Situation**  \nNo market data were retrieved for any crop. Therefore we cannot provide current prices or demand information.\n\n**Expected Financial Result**  \nNo financial projections can be offered because we lack both suitability and market data.\n\n**Risk and Uncertainty**  \n- High uncertainty: the suitability score is zero and the level is unknown.  \n- No market information means potential revenue cannot be estimated.  \n- The deterministic ranking engine failed to produce an analysis, indicating insufficient data.\n\n**Data Confidence**  \n- **Live data**: None available for crop suitability or market prices.  \n- **Cached data**: None available.  \n- **Unavailable data**: Crop suitability data for your region and market data for potential crops are missing.\n\n**Important Caution**  \nBecause no recommendation was generated, you should not rely on this output for planting decisions. Seek additional local agronomic advice or conduct your own soil and market research before deciding what to plant.\n\n**Sources**  \nNo agricultural sources were retrieved for this query."
+    },
+    {
+      "id": "e2e_002",
+      "status": "completed",
+      "checks": {
+        "pipeline_returned_data": true,
+        "answer_present": true,
+        "ranking_present": true,
+        "citations_are_list": true,
+        "recommendation_available": true,
+        "profit_tool_returned_data": false
+      },
+      "errors": [],
+      "consistency": {
+        "passed": false,
+        "checks": {
+          "recommendation_matches_ranking": {
+            "passed": true,
+            "expected_crop": "tomato"
+          },
+          "citation_metadata_valid": {
+            "passed": true,
+            "citation_count": 1,
+            "invalid_indices": []
+          },
+          "market_data_available": {
+            "passed": false,
+            "unavailable_market_results": [
+              {
+                "tool": "get_market_information",
+                "status": "unavailable"
+              }
+            ]
+          }
+        }
+      },
+      "recommended_crop": "tomato",
+      "profit_results": [],
+      "citation_count": 1,
+      "answer": "**Recommended Crop**  \nTomato  \n\n**Why This Crop**  \n- **Suitability**: The soil is loamy, which matches tomato’s preferred soil types (red or loamy). Temperature (29 °C) is within the 18–30 °C range, and the rabi season is suitable. The only drawback is that the seasonal rainfall (≈ 3.6 mm daily) is below the crop’s preferred 600–1200 mm, but the overall suitability score is 75.51 (medium).  \n- **Profitability**: The model estimates a profit of ₹405,000 on 1 acre, based on an expected yield of 18,000 kg and a price of ₹25/kg.  \n- **Market Outlook**: Current market prices in Ongole are cached at ₹20–30/kg, with a recent trend of rising prices and a stable outlook.  \n\n**Market Situation**  \n- **Current Prices (cached)**: ₹20–30/kg (median ₹25/kg).  \n- **Historical Trend**: Prices have risen 7–12 % over the past 7–30 days, with low volatility (coefficient of variation ≈ 0.04).  \n- **Data Confidence**: Market data is *cached* from a demo source; it may not reflect today’s actual price.  \n\n**Expected Financial Result**  \n- **Revenue**: ₹450,000 (18,000 kg × ₹25/kg).  \n- **Total Cost**: ₹45,000.  \n- **Profit**: ₹405,000.  \n\n**Risk and Uncertainty**  \n- **Water Availability**: The water component score is only 30/100; irrigation may be needed to meet crop water requirements.  \n- **Rainfall**: Seasonal rainfall is below the preferred range, which could affect yield if irrigation is not adequate.  \n- **Market Price Volatility**: Although recent prices are stable, the cached data may not capture sudden market shifts.  \n- **Weather Variability**: Current weather shows low precipitation (3.6 mm daily) and a temperature of 29 °C; unexpected weather changes could impact growth.  \n\n**Data Confidence**  \n- **Weather**: Live data from Open‑Meteo (status: live).  \n- **Market**: Cached data (status: cached); historical data quality is weak.  \n- **Agricultural Knowledge**: General crop‑planning guidance from Tamil Nadu Agricultural University (source: “TNAU Crop Production Knowledge Base”).  \n\n**Important Caution**  \n- The profit estimate is based on deterministic calculations and does not guarantee earnings.  \n- The recommendation assumes that irrigation can compensate for lower rainfall.  \n- Market prices may change; consider monitoring local price boards and securing buyers in advance.  \n\n**Sources**  \n1. Tamil Nadu Agricultural University – “TNAU Crop Production Knowledge Base” (general crop‑planning guidance).  \n2. Open‑Meteo – live weather data for Ongole.  \n3. Demo‑cache – current and historical tomato market prices in Ongole (cached)."
+    },
+    {
+      "id": "e2e_003",
+      "status": "completed",
+      "checks": {
+        "pipeline_returned_data": true,
+        "answer_present": true,
+        "ranking_present": true,
+        "citations_are_list": true,
+        "recommendation_available": false,
+        "profit_tool_returned_data": false
+      },
+      "errors": [],
+      "consistency": {
+        "passed": false,
+        "checks": {
+          "recommendation_matches_ranking": {
+            "passed": false,
+            "reason": "No deterministic recommendation was found."
+          },
+          "citation_metadata_valid": {
+            "passed": true,
+            "citation_count": 0,
+            "invalid_indices": []
+          },
+          "market_data_available": {
+            "passed": true,
+            "unavailable_market_results": []
+          }
+        }
+      },
+      "recommended_crop": null,
+      "profit_results": [],
+      "citation_count": 0,
+      "answer": "**Recommended Crop**  \nNo crop recommendation could be generated because the deterministic ranking engine was unable to produce a candidate crop analysis for your farm.\n\n**Why This Crop**  \nThe suitability assessment returned a score of 0 with the level marked as “unknown” and the reason “Crop data not available.” This indicates that the system does not have the necessary crop‑specific data for the conditions you described (Guntur, black soil, high water, Kharif season, 3 acres). Without that data, the engine cannot determine which crop would be most suitable.\n\n**Market Situation**  \nNo market information was retrieved for any crop. Therefore, there is no available data on current prices, demand, or supply conditions for potential crops in your region.\n\n**Expected Financial Result**  \nBecause neither suitability nor market data is available, no financial projections can be provided.\n\n**Risk and Uncertainty**  \n- The lack of crop suitability data means you cannot rely on the system to identify a crop that matches your soil, water, and seasonal conditions.  \n- Without market data, you cannot assess potential revenue or price volatility for any crop.\n\n**Data Confidence**  \n- **Suitability data:** Unavailable (cached or missing).  \n- **Market data:** Unavailable.  \n- **Ranking engine output:** Error – no recommendation produced.\n\n**Important Caution**  \n- Do not assume that any crop will be profitable or suitable based solely on this output.  \n- Consider consulting local agricultural extension services, soil testing labs, or market analysts to obtain the necessary data before making planting decisions.\n\n**Sources**  \nNo external sources were retrieved for this query."
+    }
+  ]
+}

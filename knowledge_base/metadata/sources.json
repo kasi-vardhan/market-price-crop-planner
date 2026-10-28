@@ -1,0 +1,87 @@
+[
+  {
+    "source_id": "icar_tomato",
+    "organization": "Indian Council of Agricultural Research",
+    "title": "ICAR Kharif Agro-Advisories – Tomato Production Guidelines",
+    "document_type": "government_agricultural_advisory",
+    "url": "https://icar.gov.in/en/icar-kharif-agro-advisories-farmers-2025"
+  },
+  {
+    "source_id": "icar_chilli",
+    "organization": "Indian Council of Agricultural Research",
+    "title": "ICAR Kharif Agro-Advisories – Chilli Management",
+    "document_type": "government_agricultural_advisory",
+    "url": "https://icar.gov.in/en/icar-kharif-agro-advisories-farmers-2025"
+  },
+  {
+    "source_id": "icar_groundnut",
+    "organization": "Indian Council of Agricultural Research",
+    "title": "ICAR Kharif Agro-Advisories – Groundnut Production Guidelines",
+    "document_type": "government_crop_information",
+    "url": "https://icar.gov.in/en/icar-kharif-agro-advisories-farmers-2025"
+  },
+  {
+    "source_id": "icar_paddy",
+    "organization": "Indian Council of Agricultural Research",
+    "title": "ICAR Kharif Agro-Advisories – Rice/Paddy Cultivation",
+    "document_type": "government_agricultural_advisory",
+    "url": "https://icar.gov.in/en/icar-kharif-agro-advisories-farmers-2025"
+  },
+  {
+    "source_id": "icar_green_gram",
+    "organization": "ICAR - Indian Institute of Pulses Research (IIPR) & ANGRAU",
+    "title": "ICAR-IIPR Pulse Advisory – Green Gram (Moong) Cultivation Package",
+    "document_type": "government_agricultural_advisory",
+    "url": "https://iipr.icar.gov.in/"
+  },
+  {
+    "source_id": "icar_bengal_gram",
+    "organization": "ICAR - Indian Institute of Pulses Research (IIPR) & PJTSAU",
+    "title": "ICAR-IIPR Rabi Pulses – Bengal Gram (Chickpea) Guidelines",
+    "document_type": "government_agricultural_advisory",
+    "url": "https://iipr.icar.gov.in/"
+  },
+  {
+    "source_id": "icar_maize",
+    "organization": "ICAR - Indian Institute of Maize Research (IIMR) & ANGRAU",
+    "title": "ICAR-IIMR Maize Crop Management & Agronomic Practices",
+    "document_type": "government_agricultural_advisory",
+    "url": "https://iimr.icar.gov.in/"
+  },
+  {
+    "source_id": "icar_red_gram",
+    "organization": "ICAR - Indian Institute of Pulses Research (IIPR) & ANGRAU",
+    "title": "ICAR-IIPR Red Gram (Pigeonpea) Package of Practices",
+    "document_type": "government_agricultural_advisory",
+    "url": "https://iipr.icar.gov.in/"
+  },
+  {
+    "source_id": "icar_cotton",
+    "organization": "ICAR - Central Institute for Cotton Research (CICR)",
+    "title": "ICAR-CICR Commercial Cotton Agronomic Recommendations",
+    "document_type": "government_agricultural_advisory",
+    "url": "https://cicr.icar.gov.in/"
+  },
+  {
+    "source_id": "icar_black_gram",
+    "organization": "ICAR - Indian Institute of Pulses Research (IIPR) & ANGRAU",
+    "title": "ICAR-IIPR & ANGRAU Black Gram (Urad Dal) Production Guide – Andhra Pradesh",
+    "document_type": "government_agricultural_advisory",
+    "url": "https://iipr.icar.gov.in/"
+  },
+  {
+    "source_id": "tnau_crop_knowledge",
+    "organization": "Tamil Nadu Agricultural University & ICAR",
+    "title": "TNAU Agritech Crop Planning & Knowledge Portal",
+    "document_type": "agricultural_university_information",
+    "url": "https://agritech.tnau.ac.in/"
+  },
+  {
+    "source_id": "icar_kharif_2025",
+    "organization": "Indian Council of Agricultural Research",
+    "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+    "document_type": "government_agricultural_advisory",
+    "url": "https://icar.gov.in/en/icar-kharif-agro-advisories-farmers-2025"
+  }
+]
+

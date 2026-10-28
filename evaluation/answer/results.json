@@ -1,0 +1,27 @@
+{
+  "evaluation": "Final Answer Grounding Evaluation",
+  "aggregate": {
+    "total_test_cases": 1,
+    "average_grounding_score": 1.0,
+    "recommendation_accuracy": 1.0,
+    "profit_accuracy": 1.0,
+    "revenue_accuracy": 1.0,
+    "price_accuracy": 1.0,
+    "source_presence_rate": 1.0
+  },
+  "cases": [
+    {
+      "id": "answer_001",
+      "checks": {
+        "recommendation_correct": true,
+        "profit_correct": true,
+        "revenue_correct": true,
+        "price_correct": true,
+        "sources_present": true
+      },
+      "passed_checks": 5,
+      "total_checks": 5,
+      "grounding_score": 1.0
+    }
+  ]
+}

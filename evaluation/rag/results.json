@@ -1,0 +1,509 @@
+{
+  "evaluation": "RAG Retrieval Evaluation",
+  "top_k": 3,
+  "aggregate": {
+    "total_test_cases": 10,
+    "crop_accuracy": 1.0,
+    "source_hit_rate": 0.9,
+    "topic_hit_rate": 0.25,
+    "keyword_score": 1.0,
+    "precision_at_k": 0.6333,
+    "mrr": 0.9,
+    "average_retrieval_distance": 1.0074
+  },
+  "cases": [
+    {
+      "id": "rag_001",
+      "query": "What soil conditions are suitable for tomato cultivation?",
+      "expected_crop": "tomato",
+      "expected_topics": [
+        "soil",
+        "cultivation"
+      ],
+      "expected_source_ids": [
+        "icar_kharif_2025"
+      ],
+      "retrieved": [
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "tomato/tomato_icAR.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "tomato",
+          "topic": "soil",
+          "distance": 0.707908034324646
+        },
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "tomato/tomato_icAR.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "tomato",
+          "topic": "soil",
+          "distance": 0.7726554870605469
+        },
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "tomato/tomato_icAR.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "tomato",
+          "topic": "soil",
+          "distance": 0.9872198700904846
+        }
+      ],
+      "metrics": {
+        "crop_correct": true,
+        "source_hit": true,
+        "topic_score": 0.5,
+        "keyword_score": 1.0,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "average_distance": 0.8226
+      }
+    },
+    {
+      "id": "rag_002",
+      "query": "What water requirements should I consider when growing tomato?",
+      "expected_crop": "tomato",
+      "expected_topics": [
+        "water"
+      ],
+      "expected_source_ids": [
+        "icar_kharif_2025"
+      ],
+      "retrieved": [
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "tomato/tomato_icAR.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "tomato",
+          "topic": "soil",
+          "distance": 0.8837656378746033
+        },
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "tomato/tomato_icAR.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "tomato",
+          "topic": "soil",
+          "distance": 0.9244657754898071
+        },
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "tomato/tomato_icAR.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "tomato",
+          "topic": "soil",
+          "distance": 1.3024909496307373
+        }
+      ],
+      "metrics": {
+        "crop_correct": true,
+        "source_hit": true,
+        "topic_score": 0.0,
+        "keyword_score": 1.0,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "average_distance": 1.0369
+      }
+    },
+    {
+      "id": "rag_003",
+      "query": "What are the important cultivation practices for chilli?",
+      "expected_crop": "chilli",
+      "expected_topics": [
+        "cultivation"
+      ],
+      "expected_source_ids": [
+        "icar_kharif_2025"
+      ],
+      "retrieved": [
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "chilli/chilli_icar.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "chilli",
+          "topic": "water",
+          "distance": 0.9336824417114258
+        },
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "chilli/chilli_icar.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "chilli",
+          "topic": "soil",
+          "distance": 1.3005380630493164
+        },
+        {
+          "source_id": "tnau_crop_knowledge",
+          "source": "general/andhra_pradesh_crop_planning.md",
+          "organization": "Tamil Nadu Agricultural University",
+          "title": "TNAU Crop Production Knowledge Base",
+          "crop": "general",
+          "topic": "soil",
+          "distance": 1.5275037288665771
+        }
+      ],
+      "metrics": {
+        "crop_correct": true,
+        "source_hit": true,
+        "topic_score": 0.0,
+        "keyword_score": 1.0,
+        "precision_at_k": 0.6667,
+        "mrr": 1.0,
+        "average_distance": 1.2539
+      }
+    },
+    {
+      "id": "rag_004",
+      "query": "What soil and water conditions are important for chilli farming?",
+      "expected_crop": "chilli",
+      "expected_topics": [
+        "soil",
+        "water"
+      ],
+      "expected_source_ids": [
+        "icar_kharif_2025"
+      ],
+      "retrieved": [
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "chilli/chilli_icar.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "chilli",
+          "topic": "water",
+          "distance": 0.8880987167358398
+        },
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "chilli/chilli_icar.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "chilli",
+          "topic": "soil",
+          "distance": 1.21217679977417
+        },
+        {
+          "source_id": "tnau_crop_knowledge",
+          "source": "general/andhra_pradesh_crop_planning.md",
+          "organization": "Tamil Nadu Agricultural University",
+          "title": "TNAU Crop Production Knowledge Base",
+          "crop": "general",
+          "topic": "soil",
+          "distance": 1.2238662242889404
+        }
+      ],
+      "metrics": {
+        "crop_correct": true,
+        "source_hit": true,
+        "topic_score": 1.0,
+        "keyword_score": 1.0,
+        "precision_at_k": 0.6667,
+        "mrr": 1.0,
+        "average_distance": 1.108
+      }
+    },
+    {
+      "id": "rag_005",
+      "query": "What are the suitable growing conditions for groundnut?",
+      "expected_crop": "groundnut",
+      "expected_topics": [
+        "cultivation"
+      ],
+      "expected_source_ids": [
+        "icar_groundnut"
+      ],
+      "retrieved": [
+        {
+          "source_id": "icar_groundnut",
+          "source": "groundnut/groundnut_icar.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "Groundnut Agricultural Information",
+          "crop": "groundnut",
+          "topic": "soil",
+          "distance": 0.7777298092842102
+        },
+        {
+          "source_id": "icar_groundnut",
+          "source": "groundnut/groundnut_icar.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "Groundnut Agricultural Information",
+          "crop": "groundnut",
+          "topic": "soil",
+          "distance": 0.853183388710022
+        },
+        {
+          "source_id": "tnau_crop_knowledge",
+          "source": "general/andhra_pradesh_crop_planning.md",
+          "organization": "Tamil Nadu Agricultural University",
+          "title": "TNAU Crop Production Knowledge Base",
+          "crop": "general",
+          "topic": "soil",
+          "distance": 1.341086983680725
+        }
+      ],
+      "metrics": {
+        "crop_correct": true,
+        "source_hit": true,
+        "topic_score": 0.0,
+        "keyword_score": 1.0,
+        "precision_at_k": 0.6667,
+        "mrr": 1.0,
+        "average_distance": 0.9907
+      }
+    },
+    {
+      "id": "rag_006",
+      "query": "What soil is appropriate for groundnut cultivation?",
+      "expected_crop": "groundnut",
+      "expected_topics": [
+        "soil"
+      ],
+      "expected_source_ids": [
+        "icar_groundnut"
+      ],
+      "retrieved": [
+        {
+          "source_id": "icar_groundnut",
+          "source": "groundnut/groundnut_icar.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "Groundnut Agricultural Information",
+          "crop": "groundnut",
+          "topic": "soil",
+          "distance": 0.7172969579696655
+        },
+        {
+          "source_id": "icar_groundnut",
+          "source": "groundnut/groundnut_icar.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "Groundnut Agricultural Information",
+          "crop": "groundnut",
+          "topic": "soil",
+          "distance": 0.8441754579544067
+        },
+        {
+          "source_id": "tnau_crop_knowledge",
+          "source": "general/andhra_pradesh_crop_planning.md",
+          "organization": "Tamil Nadu Agricultural University",
+          "title": "TNAU Crop Production Knowledge Base",
+          "crop": "general",
+          "topic": "soil",
+          "distance": 1.431015133857727
+        }
+      ],
+      "metrics": {
+        "crop_correct": true,
+        "source_hit": true,
+        "topic_score": 1.0,
+        "keyword_score": 1.0,
+        "precision_at_k": 0.6667,
+        "mrr": 1.0,
+        "average_distance": 0.9975
+      }
+    },
+    {
+      "id": "rag_007",
+      "query": "What water requirements should I consider for paddy cultivation?",
+      "expected_crop": "paddy",
+      "expected_topics": [
+        "water",
+        "cultivation"
+      ],
+      "expected_source_ids": [
+        "icar_kharif_2025"
+      ],
+      "retrieved": [
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "paddy/paddy_icar.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "paddy",
+          "topic": "soil",
+          "distance": 0.7560336589813232
+        },
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "paddy/paddy_icar.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "paddy",
+          "topic": "soil",
+          "distance": 1.3014172315597534
+        },
+        {
+          "source_id": "tnau_crop_knowledge",
+          "source": "general/andhra_pradesh_crop_planning.md",
+          "organization": "Tamil Nadu Agricultural University",
+          "title": "TNAU Crop Production Knowledge Base",
+          "crop": "general",
+          "topic": "soil",
+          "distance": 1.2709321975708008
+        }
+      ],
+      "metrics": {
+        "crop_correct": true,
+        "source_hit": true,
+        "topic_score": 0.0,
+        "keyword_score": 1.0,
+        "precision_at_k": 0.6667,
+        "mrr": 1.0,
+        "average_distance": 1.1095
+      }
+    },
+    {
+      "id": "rag_008",
+      "query": "What are important cultivation considerations for paddy?",
+      "expected_crop": "paddy",
+      "expected_topics": [
+        "cultivation"
+      ],
+      "expected_source_ids": [
+        "icar_kharif_2025"
+      ],
+      "retrieved": [
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "paddy/paddy_icar.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "paddy",
+          "topic": "soil",
+          "distance": 0.8817113637924194
+        },
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "paddy/paddy_icar.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "paddy",
+          "topic": "soil",
+          "distance": 1.328171968460083
+        },
+        {
+          "source_id": "tnau_crop_knowledge",
+          "source": "general/andhra_pradesh_crop_planning.md",
+          "organization": "Tamil Nadu Agricultural University",
+          "title": "TNAU Crop Production Knowledge Base",
+          "crop": "general",
+          "topic": "soil",
+          "distance": 1.293018102645874
+        }
+      ],
+      "metrics": {
+        "crop_correct": true,
+        "source_hit": true,
+        "topic_score": 0.0,
+        "keyword_score": 1.0,
+        "precision_at_k": 0.6667,
+        "mrr": 1.0,
+        "average_distance": 1.1676
+      }
+    },
+    {
+      "id": "rag_009",
+      "query": "What should I consider when planning crops in Andhra Pradesh?",
+      "expected_crop": null,
+      "expected_topics": [
+        "general"
+      ],
+      "expected_source_ids": [
+        "tnau_crop_knowledge"
+      ],
+      "retrieved": [
+        {
+          "source_id": "tnau_crop_knowledge",
+          "source": "general/andhra_pradesh_crop_planning.md",
+          "organization": "Tamil Nadu Agricultural University",
+          "title": "TNAU Crop Production Knowledge Base",
+          "crop": "general",
+          "topic": "soil",
+          "distance": 0.49061116576194763
+        },
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "tomato/tomato_icAR.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "tomato",
+          "topic": "soil",
+          "distance": 0.8388819098472595
+        },
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "paddy/paddy_icar.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "paddy",
+          "topic": "soil",
+          "distance": 0.8868460655212402
+        }
+      ],
+      "metrics": {
+        "crop_correct": true,
+        "source_hit": true,
+        "topic_score": 0.0,
+        "keyword_score": 1.0,
+        "precision_at_k": 0.3333,
+        "mrr": 1.0,
+        "average_distance": 0.7388
+      }
+    },
+    {
+      "id": "rag_010",
+      "query": "What factors should a farmer consider before selecting a crop?",
+      "expected_crop": null,
+      "expected_topics": [
+        "general"
+      ],
+      "expected_source_ids": [
+        "tnau_crop_knowledge"
+      ],
+      "retrieved": [
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "tomato/tomato_icAR.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "tomato",
+          "topic": "soil",
+          "distance": 0.788701057434082
+        },
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "tomato/tomato_icAR.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "tomato",
+          "topic": "soil",
+          "distance": 0.8515895009040833
+        },
+        {
+          "source_id": "icar_kharif_2025",
+          "source": "chilli/chilli_icar.md",
+          "organization": "Indian Council of Agricultural Research",
+          "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+          "crop": "chilli",
+          "topic": "soil",
+          "distance": 0.9048895835876465
+        }
+      ],
+      "metrics": {
+        "crop_correct": true,
+        "source_hit": false,
+        "topic_score": 0.0,
+        "keyword_score": 1.0,
+        "precision_at_k": 0.0,
+        "mrr": 0.0,
+        "average_distance": 0.8484
+      }
+    }
+  ]
+}

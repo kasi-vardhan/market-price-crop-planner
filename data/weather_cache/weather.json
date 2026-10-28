@@ -1,0 +1,26 @@
+{
+    "markapur": {
+        "temperature": 29,
+        "daily_rainfall": 0,
+        "temperature_max": 34,
+        "temperature_min": 24,
+        "weather_code": 1,
+        "source": "cache"
+    },
+    "ongole": {
+        "temperature": 30,
+        "daily_rainfall": 0,
+        "temperature_max": 35,
+        "temperature_min": 25,
+        "weather_code": 1,
+        "source": "cache"
+    },
+    "guntur": {
+        "temperature": 29,
+        "daily_rainfall": 0,
+        "temperature_max": 34,
+        "temperature_min": 24,
+        "weather_code": 1,
+        "source": "cache"
+    }
+}

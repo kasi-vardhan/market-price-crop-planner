@@ -1,0 +1,200 @@
+[
+  {
+    "crop": "tomato",
+    "market": "Ongole",
+    "location": "Prakasam",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-01",
+    "min_price": 20.0,
+    "max_price": 30.0,
+    "modal_price": 24.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "tomato",
+    "market": "Ongole",
+    "location": "Prakasam",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-06",
+    "min_price": 21.0,
+    "max_price": 31.0,
+    "modal_price": 25.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "chilli",
+    "market": "Guntur",
+    "location": "Guntur",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-01",
+    "min_price": 105.0,
+    "max_price": 140.0,
+    "modal_price": 120.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "chilli",
+    "market": "Guntur",
+    "location": "Guntur",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-06",
+    "min_price": 110.0,
+    "max_price": 145.0,
+    "modal_price": 125.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "groundnut",
+    "market": "Markapur",
+    "location": "Prakasam",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-01",
+    "min_price": 60.0,
+    "max_price": 76.0,
+    "modal_price": 68.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "groundnut",
+    "market": "Markapur",
+    "location": "Prakasam",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-06",
+    "min_price": 62.0,
+    "max_price": 78.0,
+    "modal_price": 70.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "paddy",
+    "market": "Ongole",
+    "location": "Prakasam",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-01",
+    "min_price": 22.0,
+    "max_price": 27.0,
+    "modal_price": 25.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "paddy",
+    "market": "Ongole",
+    "location": "Prakasam",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-06",
+    "min_price": 22.0,
+    "max_price": 28.0,
+    "modal_price": 25.5,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "green_gram",
+    "market": "Markapur",
+    "location": "Prakasam",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-01",
+    "min_price": 70.0,
+    "max_price": 85.0,
+    "modal_price": 78.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "green_gram",
+    "market": "Markapur",
+    "location": "Prakasam",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-06",
+    "min_price": 72.0,
+    "max_price": 88.0,
+    "modal_price": 80.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "bengal_gram",
+    "market": "Kurnool",
+    "location": "Kurnool",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-01",
+    "min_price": 52.0,
+    "max_price": 64.0,
+    "modal_price": 58.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "bengal_gram",
+    "market": "Kurnool",
+    "location": "Kurnool",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-06",
+    "min_price": 54.0,
+    "max_price": 66.0,
+    "modal_price": 60.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "maize",
+    "market": "Miryalaguda",
+    "location": "Guntur",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-01",
+    "min_price": 19.5,
+    "max_price": 25.0,
+    "modal_price": 22.5,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "maize",
+    "market": "Miryalaguda",
+    "location": "Guntur",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-06",
+    "min_price": 20.0,
+    "max_price": 26.0,
+    "modal_price": 23.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "red_gram",
+    "market": "Tandur",
+    "location": "Kurnool",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-01",
+    "min_price": 82.0,
+    "max_price": 100.0,
+    "modal_price": 92.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "red_gram",
+    "market": "Tandur",
+    "location": "Kurnool",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-06",
+    "min_price": 85.0,
+    "max_price": 105.0,
+    "modal_price": 95.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "cotton",
+    "market": "Adoni",
+    "location": "Kurnool",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-01",
+    "min_price": 63.0,
+    "max_price": 76.0,
+    "modal_price": 70.0,
+    "source": "Government of India AGMARKNET"
+  },
+  {
+    "crop": "cotton",
+    "market": "Adoni",
+    "location": "Kurnool",
+    "state": "Andhra Pradesh",
+    "date": "2026-10-06",
+    "min_price": 65.0,
+    "max_price": 78.0,
+    "modal_price": 72.0,
+    "source": "Government of India AGMARKNET"
+  }
+]

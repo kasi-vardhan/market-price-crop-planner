@@ -1,0 +1,29 @@
+[
+  {
+    "id": "e2e_001",
+    "farmer_question": "Compare suitable crops for my farm and recommend one based on available evidence.",
+    "location": "Markapur",
+    "soil": "red",
+    "water": "high",
+    "season": "kharif",
+    "land_area": 2
+  },
+  {
+    "id": "e2e_002",
+    "farmer_question": "Help me plan crops for a small farm and explain the financial risks.",
+    "location": "Ongole",
+    "soil": "loamy",
+    "water": "medium",
+    "season": "rabi",
+    "land_area": 1
+  },
+  {
+    "id": "e2e_003",
+    "farmer_question": "Compare crop suitability and available market information for my farm.",
+    "location": "Guntur",
+    "soil": "black",
+    "water": "high",
+    "season": "kharif",
+    "land_area": 3
+  }
+]

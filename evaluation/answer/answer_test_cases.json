@@ -1,0 +1,16 @@
+[
+  {
+    "id": "answer_001",
+    "answer": "Recommended Crop: tomato\n\nTomato is recommended based on the crop suitability analysis and available market information.\n\nExpected market price: ₹25 per kg.\n\nEstimated revenue: ₹90000.\n\nEstimated profit: ₹0.\n\nSources: ICAR agricultural guidance.",
+    "recommended_crop": "tomato",
+    "expected_price": 25,
+    "revenue": 90000,
+    "profit": 0,
+    "sources": [
+      {
+        "title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+        "organization": "ICAR"
+      }
+    ]
+  }
+]
