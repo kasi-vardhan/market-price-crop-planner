@@ -1,11 +1,15 @@
 import json
 from pathlib import Path
 
-
-CACHE_PATH = Path(
-    "../data/weather_cache/weather.json"
-) if Path("../data/weather_cache/weather.json").exists() else Path(
-    "data/weather_cache/weather.json"
+BASE_DIR = Path(__file__).resolve().parents[3]
+CACHE_PATH = (
+    Path("../data/weather_cache/weather.json")
+    if Path("../data/weather_cache/weather.json").exists()
+    else (
+        Path("data/weather_cache/weather.json")
+        if Path("data/weather_cache/weather.json").exists()
+        else BASE_DIR / "data" / "weather_cache" / "weather.json"
+    )
 )
 
 

@@ -496,8 +496,18 @@ def citation_node(
     if state.get("ranking_result"):
         rec_crop = state["ranking_result"].get("recommended_crop")
 
-    # Guarantee verified agronomic evidence for the recommended crop
-    if rec_crop:
+    # Reuse agent-retrieved evidence when it already covers the recommended crop.
+    # Only run a fallback RAG search when crop-specific evidence is missing.
+    has_recommended_crop_evidence = (
+        bool(rec_crop)
+        and any(
+            isinstance(item, dict)
+            and str(item.get("crop", "")).lower() == str(rec_crop).lower()
+            for item in knowledge_results
+        )
+    )
+
+    if rec_crop and not has_recommended_crop_evidence:
         try:
             from app.tools.rag_tool import rag_search_tool
             retrieved = rag_search_tool(
@@ -506,7 +516,7 @@ def citation_node(
                 top_k=2
             )
             if isinstance(retrieved, list) and retrieved:
-                knowledge_results = retrieved + [k for k in knowledge_results if k.get("crop") != rec_crop]
+                knowledge_results = retrieved + knowledge_results
         except Exception:
             pass
 

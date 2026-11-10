@@ -1,29 +1,41 @@
-
 import os
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 
 from app.routes.plan import router as plan_router
 from app.routes.market import router as market_router
 
-
 # Project root / frontend build directory
 BASE_DIR = Path(__file__).resolve().parents[2]
-FRONTEND_DIST = BASE_DIR / "frontend" / "dist"
+FRONTEND_DIST = Path(os.getenv("FRONTEND_DIST_DIR", str(BASE_DIR / "frontend" / "dist")))
 
-
-ALLOWED_ORIGINS = [
-    origin.strip()
-    for origin in os.getenv(
-        "ALLOWED_ORIGINS",
-        "http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000,http://127.0.0.1:3000"
-    ).split(",")
-    if origin.strip()
-]
-
+raw_origins = os.getenv("ALLOWED_ORIGINS", "").strip()
+if raw_origins == "*":
+    cors_kwargs = {
+        "allow_origins": ["*"],
+        "allow_credentials": False,
+        "allow_methods": ["*"],
+        "allow_headers": ["*"],
+    }
+else:
+    allowed_origins = [
+        origin.strip()
+        for origin in (
+            raw_origins
+            or "http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000,http://127.0.0.1:3000"
+        ).split(",")
+        if origin.strip()
+    ]
+    cors_kwargs = {
+        "allow_origins": allowed_origins,
+        "allow_credentials": True,
+        "allow_methods": ["GET", "POST", "OPTIONS"],
+        "allow_headers": ["*"],
+    }
 
 app = FastAPI(
     title="Market Price and Crop Planning Helper",
@@ -31,13 +43,9 @@ app = FastAPI(
     version="1.0.0"
 )
 
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS or ["http://localhost:5173"],
-    allow_credentials=True,
-    allow_methods=["GET", "POST", "OPTIONS"],
-    allow_headers=["*"],
+    **cors_kwargs,
 )
 
 
@@ -48,6 +56,10 @@ def health():
 
 app.include_router(plan_router)
 app.include_router(market_router)
+
+# Mount frontend assets directly for optimized static delivery
+if (FRONTEND_DIST / "assets").is_dir():
+    app.mount("/assets", StaticFiles(directory=str(FRONTEND_DIST / "assets")), name="assets")
 
 
 @app.get("/")
@@ -91,3 +103,10 @@ def serve_frontend(full_path: str):
         return FileResponse(index_file)
 
     raise HTTPException(status_code=404, detail="Frontend page not found")
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run("app.main:app", host="0.0.0.0", port=port, reload=False)

@@ -1,11 +1,15 @@
 import json
 from pathlib import Path
 
-
-CACHE_PATH = Path(
-    "../data/market_cache/market_prices.json"
-) if Path("../data/market_cache/market_prices.json").exists() else Path(
-    "data/market_cache/market_prices.json"
+BASE_DIR = Path(__file__).resolve().parents[3]
+CACHE_PATH = (
+    Path("../data/market_cache/market_prices.json")
+    if Path("../data/market_cache/market_prices.json").exists()
+    else (
+        Path("data/market_cache/market_prices.json")
+        if Path("data/market_cache/market_prices.json").exists()
+        else BASE_DIR / "data" / "market_cache" / "market_prices.json"
+    )
 )
 
 

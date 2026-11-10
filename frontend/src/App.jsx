@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+const API_BASE = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '')
+
 function App() {
   const [formData, setFormData] = useState({
     farmer_question: '',
@@ -59,7 +61,7 @@ function App() {
       if (question.length >= 3) payload.farmer_question = question
       if (budget !== null) payload.budget = budget
 
-      const response = await fetch('/api/plan', {
+      const response = await fetch(`${API_BASE}/api/plan`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
